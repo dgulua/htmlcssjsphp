@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href='Calculator.css'>
+        <script src="Calculator.js"></script>
+    </head>
+    <body>
+	<form action="submit.php" method="post">
+        <h2><u>Calculator</u></h2>
+        <table>
+            <tr>
+                <th>First Number:</th>
+                <td> <input type="text" id=fn></td>
+            </tr>
+            <tr>
+                <th>Second Number:</th>
+                <td> <input type="text" id=sn></td>
+            </tr>
+            <tr>
+                <th>Result:</th>
+                <td> <input type="text" name="rs" id=rs></td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="button" value="  ADD  " onclick="addNums()" class="btn">
+                    <input type="button" value="  SUB  " onclick="subNums()" class="btn">
+                    <input type="button" value="  MUL  " onclick="mulNums()" class="btn">
+                </th>  
+            </tr>
+        </table><br><br>
+<input type="submit" value="Submit the result">
+</form>
+    </body>
+</html>
